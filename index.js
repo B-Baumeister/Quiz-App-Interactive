@@ -2,13 +2,24 @@
 const toggleButtonBookmark = document.querySelector(
   '[data-js="toggle-button"]'
 );
-
-//console.log("test");
-
 toggleButtonBookmark.addEventListener("click", () => {
   toggleButtonBookmark.classList.toggle("bookmark--active");
 });
 
-//toggleButtonBookmark.addEventListener( , () =>{});
+const showAnswerOnButton = document.querySelector(
+  '[data-js="show-me-Answer-button"]'
+);
+const answer = document.querySelector('[data-js="show-answer"]');
 
-//toggleButtonBookmark.addEventListener( , () =>{});
+showAnswerOnButton.addEventListener("click", () => {
+  answer.classList.toggle("card__answer");
+  answer.classList.toggle("hidden");
+
+  if (answer.classList.contains("hidden")) {
+    showAnswerOnButton.textContent = "Hide Answer";
+  } else {
+    showAnswerOnButton.textContent = "Show Answer";
+  }
+});
+
+/*toggleButtonBookmark.addEventListener( , () =>{})*/
