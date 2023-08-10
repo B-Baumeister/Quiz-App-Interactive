@@ -1,0 +1,28 @@
+form {
+  display: grid;
+  width: 90%;
+  margin: 150px auto;
+  padding: 10px;
+}
+
+fieldset {
+  display: grid;
+  gap: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(37, 38, 41);
+  border: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="color"] {
+  margin: auto;
+}
+
+.button_submit {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
